@@ -1,4 +1,4 @@
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 import os
 from langchain_openai import ChatOpenAI
 from langchain.schema import SystemMessage, HumanMessage, AIMessage
@@ -6,7 +6,7 @@ from langchain.schema import SystemMessage, HumanMessage, AIMessage
 import streamlit as st
 
 # .env ファイルを読み込む
-#load_dotenv()
+load_dotenv()
 
 # 環境変数から API キーを取得
 openaiapikey = os.getenv("OPENAI_API_KEY")
